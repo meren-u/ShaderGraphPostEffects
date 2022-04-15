@@ -41,11 +41,15 @@ namespace Meren.PostEffects
 
         public PixelArtRenderPass()
         {
+            var shader = Shader.Find("Shader Graphs/PixelArt");
+            if (shader == null)
+                return;
+
             m_tempRenderTargetHandle.Init("_TempRT");
 
             m_profilingSampler = new ProfilingSampler(ProfilingSamplerName);
 
-            m_material = CoreUtils.CreateEngineMaterial(Shader.Find("Shader Graphs/PixelArt"));
+            m_material = CoreUtils.CreateEngineMaterial(shader);
 
             m_afterPostProcessTexture.Init("_AfterPostProcessTexture");
         }

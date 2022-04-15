@@ -41,11 +41,15 @@ namespace Meren.PostEffects
 
         public ColorFilterRenderPass()
         {
+            var shader = Shader.Find("Shader Graphs/ColorFilter");
+            if (shader == null)
+                return;
+
             m_tempRenderTargetHandle.Init("_TempRT");
 
             m_profilingSampler = new ProfilingSampler(ProfilingSamplerName);
 
-            m_material = CoreUtils.CreateEngineMaterial(Shader.Find("Shader Graphs/ColorFilter"));
+            m_material = CoreUtils.CreateEngineMaterial(shader);
 
             m_afterPostProcessTexture.Init("_AfterPostProcessTexture");
         }
