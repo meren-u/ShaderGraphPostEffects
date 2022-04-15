@@ -27,7 +27,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RendererFeatures:
   - {fileID: -8549649033033718220}
-  m_RendererFeatureMap: 3466c39f808b5989
+  - {fileID: 3135203485361257980}
+  m_RendererFeatureMap: 3466c39f808b5989fc3d867bf57a822b
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
@@ -56,3 +57,16 @@ MonoBehaviour:
   m_ShadowTransparentReceive: 1
   m_RenderingMode: 0
   m_AccurateGbufferNormals: 0
+--- !u!114 &3135203485361257980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902d5d0425b14504ba20fdfa47e77a9a, type: 3}
+  m_Name: NewColorFilterRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
