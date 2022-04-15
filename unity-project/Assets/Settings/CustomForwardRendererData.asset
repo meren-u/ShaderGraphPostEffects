@@ -28,7 +28,8 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: -8549649033033718220}
   - {fileID: 3135203485361257980}
-  m_RendererFeatureMap: 3466c39f808b5989fc3d867bf57a822b
+  - {fileID: 6144032199889354423}
+  m_RendererFeatureMap: 3466c39f808b5989fc3d867bf57a822bb77ef7babbfc4355
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
@@ -68,5 +69,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 902d5d0425b14504ba20fdfa47e77a9a, type: 3}
   m_Name: NewColorFilterRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+--- !u!114 &6144032199889354423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43a74f9123c98a4c8b8c92cb12582cd, type: 3}
+  m_Name: NewGrayScaleFilterRendererFeature
   m_EditorClassIdentifier: 
   m_Active: 1
