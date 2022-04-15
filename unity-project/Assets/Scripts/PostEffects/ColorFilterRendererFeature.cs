@@ -76,7 +76,7 @@ namespace Meren.PostEffects
 
             using (new ProfilingScope(cmd, m_profilingSampler))
             {
-                m_material.SetVector("_FilterColor", m_volume.m_filterColor.value);
+                m_material.SetColor("_FilterColor", m_volume.m_filterColor.value);
                 cmd.SetGlobalTexture(m_mainTexPropertyId, source);
                 Blit(cmd, source, m_tempRenderTargetHandle.Identifier(), m_material);
             }
